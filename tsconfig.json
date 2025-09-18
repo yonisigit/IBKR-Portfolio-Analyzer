@@ -3,7 +3,9 @@
     "rootDir": "./src",
     "outDir": "./dist",
     "module": "nodenext",
-    "target": "esnext",
+    "target": "es2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
     "types": ["node"],
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
@@ -12,6 +14,7 @@
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "lib": ["es2022", "dom", "dom.iterable"]
   }
 }
